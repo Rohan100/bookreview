@@ -62,6 +62,7 @@ app.post(
 );
 
 app.get("/", (req, res) => {
+  console.log(process.env.MONGO_URL)
   res.json({
     message: "This is home route",
   });
