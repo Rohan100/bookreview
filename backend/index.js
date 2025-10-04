@@ -77,5 +77,6 @@ app.use((err, req, res, next) => {
 
 // setting up http server at port
 app.listen(port, () => {
+  console.log(process.env.MONGO_URL)
   console.log(`There server is running at ${port}`);
 });
